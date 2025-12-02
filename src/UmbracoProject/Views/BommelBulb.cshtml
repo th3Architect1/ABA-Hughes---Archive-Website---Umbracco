@@ -1,0 +1,143 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+
+@{
+	Layout = "main.cshtml";
+    var mainImage = Model.Value<IPublishedContent>("mainImage");
+
+}
+
+
+<div class="py-10 pt-lg-5 pb-lg-12">
+    <div class="container">
+
+        <div class="mb-5 mt-5">
+            <h4 class="text-secondary"><a href="/shop">Product List</a></h4>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <picture>
+                    <source media="(max-width: 399px)" srcset="@mainImage.Url()">
+                    <source media="(min-width: 400px)" srcset="@mainImage.Url()">
+                    <img src="@mainImage.Url()" 
+                         alt="Bommel Bulb Lamp - Birch" 
+                         loading="lazy" 
+                         class="img-fluid mb-3" 
+                         width="495" 
+                         height="620">
+                </picture>
+            </div>
+
+            <div class="col-sm-12 col-md-6 ps-md-5">
+                <h1>Bommel Bulb Lamp - Birch</h1>
+                
+                <div class="mt-4">
+                    Elevate your space with the Bommel Bulb Lamp - Birch. This birch wood lamp provides warm light on the ceiling, making it perfect for both Revit family settings and GTA homes. Customize your lighting experience today.
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                        <button type="button" class="w-100 btn btn-dark btn-lg rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Get a Quote
+                        </button>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body pt-0">
+                            <h4 class="my-2 lead">Please complete the form below to get a quotation</h4>
+                            <div class="my-2">
+                                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                                <iframe class="airtable-embed" 
+                                        src="https://airtable.com/embed/shrCr6EOkJpRhKFpQ?prefill_Product_name=Bommel Bulb Lamp - Birch&prefill_Product_URL=www.abahughes.com/shop/bommel-bulb-lamp-birch/&prefill_Date=2025-11-23&backgroundColor=gray" 
+                                        frameborder="0" 
+                                        onmousewheel="" 
+                                        width="100%" 
+                                        height="533" 
+                                        style="background: transparent; border: 1px solid #ccc;">
+                                </iframe>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-dark btn-lg rounded-0" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="accordion accordion-flush pt-8" id="accordionFlushExample">
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Product Specifications
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <span class="fw-bold">Product Code</span>: BBL-BIRCH-001<br>
+                                    <span class="fw-bold">Uniformat/Omniclass Number</span>: <br>
+                                    <span class="fw-bold">Series</span>: Bommel<br>
+                                    <span class="fw-bold">Finish</span>: Birch, black porcelain socket, cloth-covered cord (either with thumb switch or ceiling canopy), LED soft-white bulb.<br>
+                                    <span class="fw-bold">Dimensions</span>: Width: 6.5" in diameter. Height: 6.25"<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Documentation
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <span class="fw-bold">Cutsheet</span> <br>
+                                <span class="fw-bold mt-3">User Manuals</span> <br>
+                                <span class="fw-bold mt-3">Catalogues</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                BIM Files
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <span class="fw-bold mt-3">BIM Files</span><br>
+                                <p class="fw-bold mb-1"><a href="#">Bommel Bulb Lamp Birch.rfa</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="mt-8">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-description-tab" data-bs-toggle="tab" data-bs-target="#nav-description" type="button" role="tab" aria-controls="nav-description" aria-selected="true">Description</button>
+                </div>
+            </nav>
+            <div class="tab-pane fade show active py-5" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab" tabindex="0"><p>Elevate your home's ambiance with our Bommel Bulb Lamp - Birch, a contemporary lighting solution that effortlessly combines form and function. Crafted with an exquisite birch wood base, this ceiling light fixture adds a touch of elegance to any room. Its distinctive, spherical bulb casts a warm and inviting glow, creating the perfect atmosphere for relaxation and sophistication.</p>
+<p>Perfect for ceiling light enthusiasts, our Bommel Bulb Lamp - Birch seamlessly blends into your decor. Its sleek design and versatile features make it a must-have addition to your home lighting collection. This ceiling light fixture is not just aesthetically pleasing but also practical, featuring an easy-to-use on/off switch conveniently located on the base and a lengthy cord for flexible placement options.</p>
+<p>With the Bommel Bulb Lamp - Birch, you can enjoy the freedom to adorn your space with a touch of sophistication. Place it on a side table, desk, or nightstand to effortlessly transform your environment.</p>
+<p>We offer a variety of cord colors to suit your preferences, including black, white, grey, salmon, turquoise, and yellow. Additionally, for those seeking a seamless ceiling with light integration, we provide ceiling hooks and ceiling canopies in both black and white metal finishes.</p>
+<p>Explore our cord options to tailor the Bommel Bulb Lamp - Birch to your specific needs:</p>
+<ul>
+<li>Cord with plug: This option includes a 15' long cord with an on/off thumb switch positioned 4' from the plug. It also comes with a hook/cord ceiling anchor for added convenience.</li>
+<li>Cord with ceiling canopy: Opt for this choice to receive a 10' long cord with a ceiling canopy, perfect for creating a clean and minimalist look.</li>
+</ul>
+<p>Our Bommel Bulb Lamp - Birch package is complete with everything you need for a hassle-free installation, including 1 LED soft-white bulb and 2 ceiling clamps, along with your chosen cord option.</p>
+<p>Whether you're a design enthusiast looking for a Revit family of a lighting solution or a GTA resident in search of the perfect ceiling light, our Bommel Bulb Lamp - Birch is designed to meet your needs while enhancing the style and comfort of your living space. Illuminate your world with the timeless beauty and functionality of this exceptional ceiling light fixture.</p></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

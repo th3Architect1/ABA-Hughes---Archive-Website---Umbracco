@@ -1,0 +1,134 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+
+@{
+    Layout = "main.cshtml";
+    var mainImage = Model.Value<IPublishedContent>("mainImage");
+
+
+}
+
+
+<div class="py-10 pt-lg-5 pb-lg-12">
+    <div class="container">
+
+        <div class="mb-5 mt-5">
+            <h4 class="text-secondary"><a href="/shop">Product List</a></h4>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <picture>
+                    <source media="(max-width: 399px)" srcset="@mainImage.Url()">
+                    <source media="(min-width: 400px)" srcset="@mainImage.Url()">
+                    <img src="@mainImage.Url()" 
+                         alt="Lighting Zehyr" 
+                         loading="lazy" 
+                         class="img-fluid mb-3" 
+                         width="495" 
+                         height="620">
+                </picture>
+            </div>
+
+            <div class="col-sm-12 col-md-6 ps-md-5">
+                <h1>Zephyr</h1>
+                
+                <div class="mt-4">
+                    Upgrade your space with Zephyr Lighting Fixtures - a modern and stylish illumination solution for any room
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                        <button type="button" class="w-100 btn btn-dark btn-lg rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Get a Quote
+                        </button>
+                    </div>
+                    
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body pt-0">
+                            <h4 class="my-2 lead">Please complete the form below to get a quotation</h4>
+                            <div class="my-2">
+                                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                                <iframe class="airtable-embed" 
+                                        src="https://airtable.com/embed/shrCr6EOkJpRhKFpQ?prefill_Product_name=Lighting Fixtures - Zephyr&prefill_Product_URL=www.abahughes.com/shop/lighting-fixtures-zephyr/&prefill_Date=2025-11-23&backgroundColor=gray" 
+                                        frameborder="0" 
+                                        onmousewheel="" 
+                                        width="100%" 
+                                        height="533" 
+                                        style="background: transparent; border: 1px solid #ccc;">
+                                </iframe>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-dark btn-lg rounded-0" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="accordion accordion-flush pt-8" id="accordionFlushExample">
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Product Specifications
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <span class="fw-bold">Product Code</span>: SM253300CLBK<br>
+                                    <span class="fw-bold">Uniformat/Omniclass Number</span>: 26 50 00/23.80.70.11.17<br>
+                                    <span class="fw-bold">Series</span>: Zephyr<br>
+                                    <span class="fw-bold">Finish</span>: Black<br>
+                                    <span class="fw-bold">Dimensions</span>: Width: 15.75" Height: 10" Length: 15.75" Wire Length: 8" Hanging Weight: 12.61 lb. Adjustable: No UPS Shippable: Yes Canopy Width: 7.5" Canopy Height: 1.5" Canopy Length: 7.5"<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Documentation
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <span class="fw-bold">Cutsheet</span> 
+                                <p class="mb-1"><a href="#">SM253300CLBK</a></p>
+                                <span class="fw-bold mt-3">User Manuals</span> <br>
+                                <span class="fw-bold mt-3">Catalogues</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                BIM Files
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <span class="fw-bold mt-3">BIM Files</span><br>
+                                <p class="fw-bold mb-1"><a href="#">Zephyr</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="mt-8">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-description-tab" data-bs-toggle="tab" data-bs-target="#nav-description" type="button" role="tab" aria-controls="nav-description" aria-selected="true">Description</button>
+                </div>
+            </nav>
+            <div class="tab-pane fade show active py-5" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab" tabindex="0"><p>Elevate your interior lighting with Zephyr Lighting Fixtures, a versatile and contemporary lighting solution that adds a touch of modernity and sophistication to your space. Crafted with impeccable design and functionality, these fixtures provide a perfect blend of form and function.</p><p>Zephyr Lighting Fixtures are designed to enhance the ambiance of any room, making them a versatile choice for both residential and commercial spaces. With a focus on aesthetics and energy efficiency, these fixtures offer long-lasting performance, ensuring you get the most out of your lighting investment.</p><p>Whether you're looking to upgrade your home lighting or working on lighting projects in Revit family designs, Zephyr Lighting Fixtures are the perfect choice. Their sleek design and wide range of styles make them a versatile addition to any interior design concept.</p><p>Illuminate your space with the elegance and brilliance of Zephyr Lighting Fixtures, where modern style meets superior illumination.</p><p><strong>LAMPING:</strong></p><ul><li>Number of Bulbs: 1</li><li>Light Type: LED</li><li>Bulb Type: PCB Integrated</li><li>Bulb Max Wattage: 22</li><li>Total Wattage: 22</li><li>Rated Life: 25,000 Hours</li><li>Rated Lumens: 2420</li><li>Colour Temperature: 3000 K</li><li>Bulb(s): Integrated</li><li>CRI: 90+</li><li>Dimmable: Triac CL or ELV</li><li>Input Voltage: 120</li></ul></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

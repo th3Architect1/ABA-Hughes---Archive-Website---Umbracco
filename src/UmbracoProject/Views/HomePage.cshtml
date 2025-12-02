@@ -1,0 +1,27 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "main.cshtml";
+}
+
+
+@await Html.PartialAsync("heroView", Model)  
+@await Html.PartialAsync("servicesView")
+@await Html.PartialAsync("storeView",Model)
+@await Html.PartialAsync("portfolioView",Model)
+@await Html.PartialAsync("testimonialView",Model)
+@await Html.PartialAsync("contactusView")
+@await Html.PartialAsync("socialView",Model)
+
+        
+
+
+
+        
+
+
+
+        
+
+        
+

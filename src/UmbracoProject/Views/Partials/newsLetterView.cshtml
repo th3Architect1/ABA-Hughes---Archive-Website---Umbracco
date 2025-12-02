@@ -1,0 +1,48 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+@{
+   var background = Model.Value<IPublishedContent>("background");
+}
+<div style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ),  url(@background.Url()?anchor=center&amp;mode=crop&amp;width=1600&amp;height=400&amp;format=jpg&amp;rnd=132901055277230000); background-size: cover; background-repeat: no-repeat; background-position: center;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="pt-18 pb-13 pt-lg-20 pb-lg-19 text-center text-light">
+                        <h1 class="display-3 text-white mb-3 lh-1">Newsletter Sign-Up</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-10 pt-lg-16 pb-lg-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-2 mt-2 mb-4">
+                        <div class="float-start me-2" style="background-color: #11B5DA; width:20px; height:20px;">
+                        </div>
+                        <div clas="fs-6">Newsletter Sign-Up</div>
+                    </div>
+                    <div class="col-sm-12 col-md-8 mb-10">
+                            
+    <div class="umb-grid">
+                <div class="grid-section">
+    <div>
+            <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div>
+                            
+    <iframe class="airtable-embed" src="https://airtable.com/embed/appBx87nto6E4Gmz1/pagxXaV2WY92uIbAl/form" frameborder="0" onmousewheel="" width="100%" height="750" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+
+                </div>
+            </div>        </div>
+            </div>
+    </div>
+                </div>
+    </div>
+
+
+
+                    </div>
+                </div>
+            </div>    
+        </div>

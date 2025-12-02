@@ -1,0 +1,21 @@
+{
+  "Name": "Lighting Fixtures",
+  "Alias": "LightingFixtures",
+  "File": "umb://template-file/LightingFixtures.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/5289f2b20fcc4490abe4e76dcb257897",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/LightingFixtures.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

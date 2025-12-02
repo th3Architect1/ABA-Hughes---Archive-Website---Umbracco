@@ -1,0 +1,43 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+@{
+   var title = Model.Value<string>("title");
+   var metaTitle = Model.Value<string>("metaTitle");
+   var metaDescription = Model.Value<string>("metaDescription");
+}
+    <title>@title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="@metaDescription">
+    <meta name="keywords" content="Project Bindr">
+    <meta name="author" content="Project Bindr">
+
+    <!-- Google Verification -->
+    <meta name="google-site-verification" content="YktB4Vd7qmaLyVn-haWr64zhfTrellaLTt5KmUaVnuA" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="@metaTitle">
+    <meta itemprop="description" content="@metaDescription">
+    <meta itemprop="image" content="https://www.abahughes.com/media/3pzfvz1o/butterfly-thumnail-1.jpeg">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@metaTitle">
+    <meta name="twitter:description" content="@metaDescription">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="https://www.abahughes.com/media/3pzfvz1o/butterfly-thumnail-1.jpeg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="@metaTitle" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="@Model.Url()" />
+    <meta property="og:image" content="https://www.abahughes.com/media/3pzfvz1o/butterfly-thumnail-1.jpeg" />
+    <meta property="og:image:width" content="2000" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image:alt" />
+    <meta property="og:description" content="@metaTitle" />
+    <meta property="og:site_name" content="Project Bindr" />
+    <meta property="article:published_time" />
+    <meta property="article:section" content="Articles" />
+    <meta property="article:tag" content="Article Tag" />

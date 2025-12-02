@@ -1,0 +1,140 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+@{
+    var bishopImage = Model.Value<IPublishedContent>("bishopImage");
+    var auntyImage = Model.Value<IPublishedContent>("auntyImage");
+    var potpourriImage = Model.Value<IPublishedContent>("potpourriImage");
+    var standardGImage = Model.Value<IPublishedContent>("standardGImage");
+    var standardAImage = Model.Value<IPublishedContent>("standardAImage");
+    var woodmountImage = Model.Value<IPublishedContent>("woodmountImage");
+    var hybridImage = Model.Value<IPublishedContent>("hybridImage");
+    var butterflyImage = Model.Value<IPublishedContent>("butterflyImage");
+    var englishImage = Model.Value<IPublishedContent>("englishImage");
+}
+<!-- Portfolio section -->
+<div id="portfolio" class="pt-lg-5 pb-lg-12">
+   <div class="container">
+      <div class="row">
+
+    	<div class="col-sm-12 col-md-4">
+            <a href="/portfolio/the-bishop/">
+                    <picture>
+                        <img src="@bishopImage.GetCropUrl(width: 424, height: 424)"
+                            alt="Toronto Transitional Design"
+                            loading="lazy"
+                            class="img-fluid"
+                            width="424"
+                            height="424">
+                    </picture>
+            </a>
+            <p class="mt-4 ps-3 p-3 text-black bg-white"><a href="/portfolio/the-bishop/" class="text-black">The Bishop</a></p>
+        </div>
+    	<div class="col-sm-12 col-md-4">
+            <a href="/portfolio/aunty-ann-s-bathroom/">
+                    <picture>
+                        <img src="@auntyImage.GetCropUrl(width: 424, height: 424)"
+                            alt="Aunty Ann&#39;s Bathroom thumnail"
+                            loading="lazy"
+                            class="img-fluid"
+                            width="424"
+                            height="424">
+                    </picture>
+            </a>
+            <p class="mt-4 ps-3 p-3 text-black bg-white"><a href="/portfolio/aunty-ann-s-bathroom/" class="text-black">Aunty Ann&#39;s Bathroom</a></p>
+        </div>
+    	<div class="col-sm-12 col-md-4">
+            <a href="/portfolio/potpourri/">
+                
+                    <picture>
+                        <img src="@potpourriImage.GetCropUrl(width: 424, height: 424)"
+                            alt="Potpourri Thumnail"
+                            loading="lazy"
+                            class="img-fluid"
+                            width="424"
+                            height="424">
+                    </picture>                
+            </a>
+            <p class="mt-4 ps-3 p-3 text-black bg-white"><a href="/portfolio/potpourri/" class="text-black">Potpourri</a></p>
+        </div>
+    	<div class="col-sm-12 col-md-4">
+            <a href="/portfolio/standard-g/">
+                <picture>
+                    <img src="@standardGImage.GetCropUrl(width: 424, height: 424)"
+                            alt="Standard G"
+                            loading="lazy"
+                            class="img-fluid"
+                            width="424"
+                            height="424">
+                </picture>
+            </a>
+            <p class="mt-4 ps-3 p-3 text-black bg-white"><a href="/portfolio/standard-g/" class="text-black">Standard G</a></p>
+        </div>
+    	<div class="col-sm-12 col-md-4">
+            <a href="/portfolio/standard-a/">
+                <picture>
+                    <img src="@standardAImage.GetCropUrl(width: 424, height: 424)"
+                            alt="Standard A"
+                            loading="lazy"
+                            class="img-fluid"
+                            width="424"
+                            height="424">
+                </picture>
+            </a>
+            <p class="mt-4 ps-3 p-3 text-black bg-white"><a href="/portfolio/standard-a/" class="text-black">Standard A</a></p>
+        </div>
+    	<div class="col-sm-12 col-md-4">
+            <a href="/portfolio/woodmount/">
+                <picture>
+                    <img src="@woodmountImage.GetCropUrl(width: 424, height: 424)"
+                            alt="Modern transitional Toronto home"
+                            loading="lazy"
+                            class="img-fluid"
+                            width="424"
+                            height="424">
+                </picture>
+            </a>
+            <p class="mt-4 ps-3 p-3 text-black bg-white"><a href="/portfolio/woodmount/" class="text-black">Woodmount</a></p>
+        </div>
+    	<div class="col-sm-12 col-md-4">
+            <a href="/portfolio/hybrid/">
+                <picture>
+                    <img src="@hybridImage.GetCropUrl(width: 424, height: 424)"
+                            alt="Modern 3 bedroom home in Etobicoke, Toronto designed by Project Bindr"
+                            loading="lazy"
+                            class="img-fluid"
+                            width="424"
+                            height="424">
+                </picture>
+            </a>
+            <p class="mt-4 ps-3 p-3 text-black bg-white"><a href="/portfolio/hybrid/" class="text-black">Hybrid</a></p>
+        </div>
+    	<div class="col-sm-12 col-md-4">
+            <a href="/portfolio/butterfly/">
+                <picture>
+                  <img src="@butterflyImage.GetCropUrl(width: 424, height: 424)"
+                            alt="Butterfly"
+                            loading="lazy"
+                            class="img-fluid"
+                            width="424"
+                            height="424">  
+                </picture>
+            </a>
+            <p class="mt-4 ps-3 p-3 text-black bg-white"><a href="/portfolio/butterfly/" class="text-black">Butterfly</a></p>
+        </div>
+    	<div class="col-sm-12 col-md-4">
+            <a href="/portfolio/english/">
+                <picture>
+                    <img src="@englishImage.GetCropUrl(width: 424, height: 424)"
+                            alt="English"
+                            loading="lazy"
+                            class="img-fluid"
+                            width="424"
+                            height="424">
+                </picture>
+            </a>
+            <p class="mt-4 ps-3 p-3 text-black bg-white"><a href="/portfolio/english/" class="text-black">English</a></p>
+        </div>
+    
+      </div>
+   </div>
+</div>

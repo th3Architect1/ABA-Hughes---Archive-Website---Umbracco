@@ -1,0 +1,146 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+
+@{
+	Layout = "main.cshtml";
+    var mainImage = Model.Value<IPublishedContent>("mainImage");
+
+}
+
+
+
+<div class="py-10 pt-lg-5 pb-lg-12">
+    <div class="container">
+
+        <div class="mb-5 mt-5">
+            <h4 class="text-secondary"><a href="/shop">Product List</a></h4>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <picture>
+                    <source media="(max-width: 399px)" srcset="@mainImage.Url()">
+                    <source media="(min-width: 400px)" srcset="@mainImage.Url()">
+                    <img src="@mainImage.Url()" 
+                         alt="4 Inch Slim LED Recessed Pot Lights" 
+                         loading="lazy" 
+                         class="img-fluid mb-3" 
+                         width="495" 
+                         height="620">
+                </picture>
+            </div>
+
+            <div class="col-sm-12 col-md-6 ps-md-5">
+                <h1>4" Slim LED Recessed Pot Lights</h1>
+                
+                <div class="mt-4">
+Transform your space with 4 Inch Slim LED Recessed Pot Lights – sleek, energy-efficient lighting for a modern home.                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                        <button type="button" class="w-100 btn btn-dark btn-lg rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Get a Quote
+                        </button>
+                    </div>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body pt-0">
+                            <h4 class="my-2 lead">Please complete the form below to get a quotation</h4>
+                            <div class="my-2">
+                                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                                <iframe class="airtable-embed" 
+                                        src="https://airtable.com/embed/shrCr6EOkJpRhKFpQ?prefill_Product_name=4 Inch Slim LED Recessed Pot Lights&prefill_Product_URL=www.abahughes.com/shop/lighting-fixutres-4-inch-slim-led-recessed-pot-lights/&prefill_Date=2025-11-23&backgroundColor=gray" 
+                                        frameborder="0" 
+                                        onmousewheel="" 
+                                        width="100%" 
+                                        height="533" 
+                                        style="background: transparent; border: 1px solid #ccc;">
+                                </iframe>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-dark btn-lg rounded-0" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="accordion accordion-flush pt-8" id="accordionFlushExample">
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Product Specifications
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <span class="fw-bold">Product Code</span>: LED-4IN-SLIM-001<br>
+                                    <span class="fw-bold">Uniformat/Omniclass Number</span>: <br>
+                                    <span class="fw-bold">Size</span>: 4 Inch<br>
+                                    <span class="fw-bold">Wattage</span>: 9W-10W<br>
+                                    <span class="fw-bold">Lumens</span>: 630-650 Lumens<br>
+                                    <span class="fw-bold">Color Temperature</span>: Selectable 2700K-5000K<br>
+                                    <span class="fw-bold">Voltage</span>: 120V<br>
+                                    <span class="fw-bold">Dimming</span>: Yes, TRIAC dimmable<br>
+                                    <span class="fw-bold">Lifespan</span>: 50,000 hours<br>
+                                    <span class="fw-bold">Profile Depth</span>: Ultra-slim, 0.5" (1/2 inch)<br>
+                                    <span class="fw-bold">Installation</span>: No recessed can required, includes junction box<br>
+                                    <span class="fw-bold">Ratings</span>: IC-rated, airtight, ETL Listed, Energy Star<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Documentation
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <span class="fw-bold">Cutsheet</span> <br>
+                                <span class="fw-bold mt-3">User Manuals</span> <br>
+                                <span class="fw-bold mt-3">Catalogues</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                BIM Files
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <span class="fw-bold mt-3">BIM Files</span><br>
+                                <p class="fw-bold mb-1"><a href="#">4 Inch Slim LED Recessed Light.rfa</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="mt-8">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-description-tab" data-bs-toggle="tab" data-bs-target="#nav-description" type="button" role="tab" aria-controls="nav-description" aria-selected="true">Description</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active py-5" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab" tabindex="0"><p>Elevate your lighting design with our 4 Inch Slim LED Recessed Pot Lights, the perfect choice for achieving a modern, energy-efficient ambiance in your space. These slim LED lights provide a contemporary lighting solution that seamlessly blends style and functionality.</p>
+<p>Designed to fit into tight spaces, these recessed pot lights are ideal for various residential applications. Their slim profile ensures a sleek appearance without compromising on illumination quality. Enjoy energy savings and long-lasting performance, making them a practical addition to your home.</p>
+<p>Our 4 Inch Slim LED Recessed Pot Lights are the perfect complement to modern interiors, offering both form and function. Whether you're upgrading your home or working on lighting projects in Revit family designs, these lights are a versatile choice.</p>
+<p>Experience the future of lighting with our 4 Inch Slim LED Recessed Pot Lights, where efficiency meets aesthetics.</p></div>
+                
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

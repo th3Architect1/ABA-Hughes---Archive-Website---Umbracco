@@ -1,0 +1,176 @@
+{
+  "Name": "Shop",
+  "Alias": "shop",
+  "DefaultTemplate": "umb://template/693022880d1f435ca15d2f721d9237e4",
+  "AllowedTemplates": [
+    "umb://template/693022880d1f435ca15d2f721d9237e4"
+  ],
+  "HistoryCleanup": {},
+  "Icon": "icon-shopping-basket color-blue",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": [
+      "umb://document-type/2a4baa697f2641f3b7042e035bdba82b",
+      "umb://document-type/6ac851f64e494349b6c807c4ed7f257d",
+      "umb://document-type/23a399e577bf4d02b97ed4695ae362e3",
+      "umb://document-type/991b4d65dff2435bbef2e32f23f18e3b",
+      "umb://document-type/01a3d7d17cd04a07a67b9204dee5343c",
+      "umb://document-type/82c7c98d8d8c4f1fb20d349e8fe3539e",
+      "umb://document-type/dd994183ab294a8da31eb0131f9ac620",
+      "umb://document-type/c0a58613aedd44c89b789d385fc76091",
+      "umb://document-type/004337a38c4e47a9a098cf6540ec24d2",
+      "umb://document-type/93e76422475b411190e70038391c44f3",
+      "umb://document-type/dd2232edc9a8410ca8da1094e67dcfbf",
+      "umb://document-type/e2d5da3d066444b4a92c683454262ef7",
+      "umb://document-type/40e821f143704c91b621ef42f93236d8",
+      "umb://document-type/3de98b056ce74ceba13f195ee08d3f15",
+      "umb://document-type/58fb9a61523a49f69a9f34ca139a4345"
+    ]
+  },
+  "Parent": "umb://document-type-container/c019110181434090abf38777b832465f",
+  "CompositionContentTypes": [
+    "umb://document-type/b358bd0d088d4386a532a7d6f3bb7149"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "93902bc4-cf77-45ea-b91f-79b882199efd",
+      "Name": "Products",
+      "Alias": "assets/products",
+      "PropertyTypes": [
+        {
+          "Key": "9b445e6e-9ed0-41b6-9036-9252e65d69f1",
+          "Alias": "products",
+          "DataType": "umb://data-type/f3b88891f16449a39cfcdacafca14e30",
+          "Name": "products"
+        }
+      ]
+    },
+    {
+      "Key": "aa9db908-0f98-4940-a8e5-ba5746c671b0",
+      "Name": "Content",
+      "SortOrder": 1,
+      "Type": 1,
+      "Alias": "content",
+      "PropertyTypes": [
+        {
+          "Key": "1e504eb7-8884-486d-ae2b-3e321bfc36e1",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Title"
+        }
+      ]
+    },
+    {
+      "Key": "e9765ac5-af5a-4d0f-a200-47cf7aa409b9",
+      "Name": "Assets",
+      "Type": 1,
+      "Alias": "assets",
+      "PropertyTypes": [
+        {
+          "Key": "6a36a84e-6d11-4559-a057-ee724855c2f9",
+          "Alias": "nav",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Nav",
+          "SortOrder": 2
+        },
+        {
+          "Key": "fc131c55-cbed-4726-8534-eb23552c53d5",
+          "Alias": "logo",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Logo"
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/7322ac9651d34118aecb66ab477e030d",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/f3b88891f16449a39cfcdacafca14e30",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/c019110181434090abf38777b832465f",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/004337a38c4e47a9a098cf6540ec24d2",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/01a3d7d17cd04a07a67b9204dee5343c",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/23a399e577bf4d02b97ed4695ae362e3",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/2a4baa697f2641f3b7042e035bdba82b",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/3de98b056ce74ceba13f195ee08d3f15",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/40e821f143704c91b621ef42f93236d8",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/58fb9a61523a49f69a9f34ca139a4345",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/6ac851f64e494349b6c807c4ed7f257d",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/82c7c98d8d8c4f1fb20d349e8fe3539e",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/93e76422475b411190e70038391c44f3",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/991b4d65dff2435bbef2e32f23f18e3b",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/b358bd0d088d4386a532a7d6f3bb7149",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/c0a58613aedd44c89b789d385fc76091",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/dd2232edc9a8410ca8da1094e67dcfbf",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/dd994183ab294a8da31eb0131f9ac620",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/e2d5da3d066444b4a92c683454262ef7",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/693022880d1f435ca15d2f721d9237e4",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "16.0.4"
+}

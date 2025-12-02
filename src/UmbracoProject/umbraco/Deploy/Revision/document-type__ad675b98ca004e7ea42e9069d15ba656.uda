@@ -1,0 +1,132 @@
+{
+  "Name": "Butterfly",
+  "Alias": "butterfly",
+  "DefaultTemplate": "umb://template/bd3cc4678a7f41f0af39c5283451cd07",
+  "AllowedTemplates": [
+    "umb://template/bd3cc4678a7f41f0af39c5283451cd07"
+  ],
+  "HistoryCleanup": {},
+  "Icon": "icon-hammer color-blue",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/b7fb7c3f1516403ab754fd2c232e0aa8",
+  "CompositionContentTypes": [
+    "umb://document-type/b358bd0d088d4386a532a7d6f3bb7149"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "751bfbc7-9971-4f8a-b531-34b4d0a96f86",
+      "Name": "Content",
+      "SortOrder": 1,
+      "Type": 1,
+      "Alias": "content",
+      "PropertyTypes": [
+        {
+          "Key": "98704c69-ac16-4f11-8446-3eb526ae3bbf",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Title"
+        }
+      ]
+    },
+    {
+      "Key": "8cc54cd5-a96b-4223-a615-f34a41c12a43",
+      "Name": "Assets",
+      "Type": 1,
+      "Alias": "assets",
+      "PropertyTypes": [
+        {
+          "Key": "0d2ed1bc-702e-432c-a1a5-8d7bc9443bdf",
+          "Alias": "background",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Background",
+          "SortOrder": 1
+        },
+        {
+          "Key": "191420ac-97c9-403e-8c4d-ff98c5d38a9e",
+          "Alias": "picture1",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Picture1",
+          "SortOrder": 2
+        },
+        {
+          "Key": "33024043-71b9-4eca-812b-1056e4429e25",
+          "Alias": "picture6",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Picture6",
+          "SortOrder": 7
+        },
+        {
+          "Key": "36365067-116d-4f9e-a9bb-93da8d948933",
+          "Alias": "logo",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Logo"
+        },
+        {
+          "Key": "5ccd4398-4b7d-4670-b16f-e2a3f2c24cb6",
+          "Alias": "nav",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Nav",
+          "SortOrder": 8
+        },
+        {
+          "Key": "60ac6ec9-7ff6-49cf-8e93-112fb383ee29",
+          "Alias": "picture3",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Picture3",
+          "SortOrder": 4
+        },
+        {
+          "Key": "642fbad3-dea8-432e-b838-98321e6eed21",
+          "Alias": "picture2",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Picture2",
+          "SortOrder": 3
+        },
+        {
+          "Key": "97e110a3-48a7-463b-b4ed-7c260ccec194",
+          "Alias": "picture5",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Picture5",
+          "SortOrder": 6
+        },
+        {
+          "Key": "b435a210-4382-4d3f-8562-264811c69f3a",
+          "Alias": "picture4",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Picture4",
+          "SortOrder": 5
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/ad675b98ca004e7ea42e9069d15ba656",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/b7fb7c3f1516403ab754fd2c232e0aa8",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/b358bd0d088d4386a532a7d6f3bb7149",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://template/bd3cc4678a7f41f0af39c5283451cd07",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "16.0.4"
+}

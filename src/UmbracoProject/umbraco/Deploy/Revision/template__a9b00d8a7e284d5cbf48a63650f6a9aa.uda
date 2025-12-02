@@ -1,0 +1,21 @@
+{
+  "Name": "Soap Dispenser",
+  "Alias": "SoapDispenser",
+  "File": "umb://template-file/SoapDispenser.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/a9b00d8a7e284d5cbf48a63650f6a9aa",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/SoapDispenser.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

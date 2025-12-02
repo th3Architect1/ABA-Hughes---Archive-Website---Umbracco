@@ -1,0 +1,20 @@
+{
+  "Name": "HomePage - Customer Feedbacks - Block List Property Editor UI",
+  "EditorAlias": "Umbraco.BlockList",
+  "EditorUiAlias": "Umb.PropertyEditorUi.BlockList",
+  "Configuration": {
+    "blocks": [
+      {
+        "contentElementTypeKey": "3959115e-d7dc-47d6-882a-5d78f7ede468"
+      }
+    ]
+  },
+  "Udi": "umb://data-type/022fe08d739245888c33d226ac7472eb",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/3959115ed7dc47d6882a5d78f7ede468"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "16.0.4"
+}

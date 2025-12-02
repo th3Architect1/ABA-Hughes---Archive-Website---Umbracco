@@ -1,0 +1,21 @@
+{
+  "Name": "Newsletter Sign-Up",
+  "Alias": "NewsletterSignUp",
+  "File": "umb://template-file/NewsletterSignUp.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/758efab780064802a4ffa4ea009497ac",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/NewsletterSignUp.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

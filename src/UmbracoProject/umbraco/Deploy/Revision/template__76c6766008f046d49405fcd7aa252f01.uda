@@ -1,0 +1,21 @@
+{
+  "Name": "Ceiling Lighting",
+  "Alias": "CeilingLighting",
+  "File": "umb://template-file/CeilingLighting.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/76c6766008f046d49405fcd7aa252f01",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/CeilingLighting.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

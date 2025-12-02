@@ -1,0 +1,21 @@
+{
+  "Name": "Butterfly",
+  "Alias": "Butterfly",
+  "File": "umb://template-file/Butterfly.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/bd3cc4678a7f41f0af39c5283451cd07",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Butterfly.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

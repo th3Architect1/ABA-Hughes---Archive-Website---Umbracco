@@ -1,0 +1,59 @@
+{
+  "Name": "SEO Properties",
+  "Alias": "seoProperties",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-defrag color-red",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "IsElementType": true,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/77364c0754d84d63bc522e736a1d8ea5",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "3a07a08a-5f73-447e-b4f7-43d6462df1be",
+      "Name": "SEO",
+      "SortOrder": 40,
+      "Type": 1,
+      "Alias": "sEO",
+      "PropertyTypes": [
+        {
+          "Key": "69bdcc73-fe50-4c44-badf-745054a6ade5",
+          "Alias": "metaTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter the meta title for this page. If this page is blank the name will be used.",
+          "Name": "Meta Title",
+          "SortOrder": 5
+        },
+        {
+          "Key": "745ff9d7-b3a8-417b-aae9-9b6248f024c1",
+          "Alias": "metaDescription",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "Enter the meta description for this page.",
+          "Name": "Meta Description",
+          "SortOrder": 10
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/b358bd0d088d4386a532a7d6f3bb7149",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/77364c0754d84d63bc522e736a1d8ea5",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "16.0.4"
+}

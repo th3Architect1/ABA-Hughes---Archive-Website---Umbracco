@@ -1,0 +1,26 @@
+{
+  "Deploy": {
+    "Project": {
+      "Name": "aba hughes sandbox",
+      "Alias": "aba-hughes-sandbox",
+      "Id": "e4d824ee-c27e-48be-9030-65a24c310135",
+      "Workspaces": [
+        {
+          "Id": "8586a9e7-b961-45fb-adb3-3657ff30706f",
+          "Name": "Live",
+          "Type": "live",
+          "Url": "https://aba-hughes-sandbox.cacent01.umbraco.io"
+        }
+      ]
+    },
+    "Settings": {
+      "ApiKey": "590E762307F93F5251154666CA58C3EFEFD4B070"
+    }
+  },
+  "Identity": {
+    "ClientId": "0297c0f6-83ad-4481-9ae2-07a3f5475333",
+    "ClientSecret": "Q5~T526ixOHlj47lg7Mu7_.zN1fK.7ua.9",
+    "EnvironmentId": "8586a9e7-b961-45fb-adb3-3657ff30706f",
+    "LocalLoginRedirectUri": "https://redirect.identity.umbraco.com"
+  }
+}

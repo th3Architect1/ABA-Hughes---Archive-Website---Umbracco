@@ -1,0 +1,21 @@
+{
+  "Name": "Potpourri",
+  "Alias": "Potpourri",
+  "File": "umb://template-file/Potpourri.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/3a1367a8c2b14883b3bd65aac6a8bbda",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Potpourri.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

@@ -1,0 +1,51 @@
+{
+  "Name": "Customer Feedback",
+  "Alias": "customerFeedback",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-defrag color-red",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "IsElementType": true,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/2204cb2b52fe4c9699bee17f3dd1720c",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "10ef1ead-57c5-4ed7-9e97-70b54dd51d5a",
+      "Name": "Feedback",
+      "Type": 1,
+      "Alias": "feedback",
+      "PropertyTypes": [
+        {
+          "Key": "12dd400e-fb6e-4a51-b637-bd69844800e2",
+          "Alias": "customer",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Customer",
+          "SortOrder": 1
+        },
+        {
+          "Key": "b9d07dc3-b5f4-45c3-a194-95fc0c349b1f",
+          "Alias": "feedback",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Feedback"
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/3959115ed7dc47d6882a5d78f7ede468",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/2204cb2b52fe4c9699bee17f3dd1720c",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "16.0.4"
+}

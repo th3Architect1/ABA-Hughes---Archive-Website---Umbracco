@@ -1,0 +1,138 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+
+@{
+    Layout = "main.cshtml";
+    var mainImage = Model.Value<IPublishedContent>("mainImage");
+
+}
+
+
+<div class="py-10 pt-lg-5 pb-lg-12">
+    <div class="container">
+
+        <div class="mb-5 mt-5">
+            <h4 class="text-secondary"><a href="/shop">Product List</a></h4>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <picture>
+                    <source media="(max-width: 399px)" srcset="@mainImage.Url()">
+                    <source media="(min-width: 400px)" srcset="@mainImage.Url()">
+                    <img src="@mainImage.Url()" 
+                         alt="Napoleon Entice™ 60 Electric Fireplace" 
+                         loading="lazy" 
+                         class="img-fluid mb-3" 
+                         width="495" 
+                         height="620">
+                </picture>
+            </div>
+
+            <div class="col-sm-12 col-md-6 ps-md-5">
+                <h1>Napoleon Entice™ 60 Electric Fireplace</h1>
+                
+                <div class="mt-4">
+                    Elevate your space with our Entice™ 60" Linear Electric Fireplace – the epitome of modern electric fireplaces and a versatile addition to any electrical fireplace Revit family.
+                </div>
+                
+                <div class="row mt-4">
+                    <div class="col-12 col-md-4 mt-3 mt-md-0">
+                        <button type="button" class="w-100 btn btn-dark btn-lg rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          Get a Quote
+                        </button>
+                    </div>
+                    
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body pt-0">
+                            <h4 class="my-2 lead">Please complete the form below to get a quotation</h4>
+                            <div class="my-2">
+                                <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+                                <iframe class="airtable-embed" 
+                                        src="https://airtable.com/embed/shrCr6EOkJpRhKFpQ?prefill_Product_name=Napoleon Entice™ 60 Electric Fireplace&prefill_Product_URL=www.abahughes.com/shop/therapeutic-heat-lamps-entice-60-linear-electric-fireplace/&prefill_Date=2025-11-23&backgroundColor=gray" 
+                                        frameborder="0" 
+                                        onmousewheel="" 
+                                        width="100%" 
+                                        height="533" 
+                                        style="background: transparent; border: 1px solid #ccc;">
+                                </iframe>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-dark btn-lg rounded-0" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                
+                <div class="accordion accordion-flush pt-8" id="accordionFlushExample">
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Product Specifications
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p>
+                                    <span class="fw-bold">Product Code</span>: <br>
+                                    <span class="fw-bold">Uniformat/Omniclass Number</span>: <br>
+                                    <span class="fw-bold">Series</span>: Entice™<br>
+                                    <span class="fw-bold">Finish</span>: Black<br>
+                                    <span class="fw-bold">Dimensions</span>: Product Height (in) 16.94 Product Width (in) 59.69 Product Depth (in) 5.44<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Documentation
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <span class="fw-bold">Cutsheet</span> 
+                                <p class="mb-1"><a href="/media/e5xp0bdx/entice-60.pdf">Entice 60</a></p>
+                                <p class="mb-1"><a href="/media/lr0bx1zr/w415-2782_nefl36_40_50_60_72_100cfh_bebf_07-20-20.pdf">W415 2782 NEFL36 40 50 60 72 100CFH Bebf 07.20.20</a></p>
+                                <p class="mb-1"><a href="/media/ztjlg5y5/wall-mount-electric-features-cdn.pdf">Wall Mount Electric Features CDN</a></p>
+                                <p class="mb-1"><a href="/media/mi1b0yea/w415-2814_nefl60cfh-specification-sheet_-e-f_12-16-19.pdf">W415 2814 NEFL60CFH Specification Sheet E F 12.16.19</a></p>
+                                <span class="fw-bold mt-3">User Manuals</span> 
+                                <p class="mb-1"><a href="/media/tjbixvg2/w415-2814_nefl60cfh-specification-sheet_-e-f_12-16-19.pdf">W415 2814 NEFL60CFH Specification Sheet E F 12.16.19</a></p>
+                                <p class="mb-1"><a href="/media/lbxa443h/330992235_warrantyguide.pdf">330992235 Warrantyguide</a></p>
+                                <span class="fw-bold mt-3">Catalogues</span> <br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-0 mt-1">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed rounded-1 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                BIM Files
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <span class="fw-bold mt-3">BIM Files</span><br>
+                                <p class="fw-bold mb-1"><a href="/media/bx3jfevn/napoleon-entice-60-electric-fireplace.rfa">Napoleon Entice 60 Electric Fireplace</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="mt-8">
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-description-tab" data-bs-toggle="tab" data-bs-target="#nav-description" type="button" role="tab" aria-controls="nav-description" aria-selected="true">Description</button>
+                </div>
+            </nav>
+            <div class="tab-pane fade show active py-5" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab" tabindex="0"><p>Transform your living space with the Entice™ 60&quot; Linear Electric Fireplace, a modern masterpiece that combines form and function. This stunning electric fireplace is the ideal choice for those seeking contemporary elegance and the convenience of an electrical fireplace Revit family.</p><p>With its sleek design, this fireplace effortlessly complements modern interiors. Enjoy the beauty of realistic flames and adjustable heat settings, creating a cozy ambiance in your home. It's perfect for both residential and commercial spaces, fitting seamlessly into any architectural project.</p><p>Our Entice™ fireplace is the ultimate solution for architects and designers looking to enhance their Revit family fireplace collection. The detailed design ensures it integrates seamlessly into your projects while providing comfort and style.</p><p>Make a statement with the Entice™ 60&quot; Linear Electric Fireplace, setting a new standard for modern electric fireplaces.</p></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,69 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+@{
+    var logo = Model.Value<IPublishedContent>("logo");
+    var nav = Model.Value<IPublishedContent>("nav");
+}
+
+<!-- header -->
+<div class="fixed-top">
+    
+    <nav class="navbar navbar-light py-0 text-dark bg-opacity-100">
+        <div class="container-fluid ps-0 pe-0">
+            <a class="navbar-brand ps-1 py-0" href="/">
+
+                <img src="@logo.Url()?anchor=center&amp;mode=crop&amp;width=53&amp;height=53&amp;format=jpg&amp;rnd=132896823488730000" alt="Project Bindr Logo" loading="lazy" class="img-responsive mx-auto d-block float-start me-2" width="53" height="53" />
+                
+            </a>
+
+            
+            <button class="navbar-toggler border-0 p-0" type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" onclick="showSidebarContent()">
+                <span>
+                            <img src="@nav.Url()?anchor=center&amp;mode=crop&amp;width=50&amp;height=50&amp;format=png&amp;rnd=132896877565870000" alt="Project Bindr Navigation Menu Icon" loading="lazy" class="img-responsive" loading="lazy" width="56px" height="56px">
+
+                </span>
+            </button>
+            <div class="offcanvas offcanvas-end"
+                 tabindex="-1" id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+
+                            <img src="@logo.Url()?anchor=center&amp;mode=crop&amp;width=50&amp;height=50&amp;format=png&amp;rnd=132896823488730000" alt="Project Bindr Logo" loading="lazy" class="img-responsive d-block ms-5" width="50px" height="50px" />
+
+
+                    <h3 class="offcanvas-title ms-n8 ms-sm-16 ms-md-n8" id="offcanvasNavbarLabel">Project Bindr</h3>
+                    <button type="button" class="btn-close
+                  text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close" onclick="unshowSidebarContent()">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end
+                  flex-grow-1 ps-5 pe-3 mb-4">
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-black fw-bold" style="font-size: 1.8rem;" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black fw-bold" style="font-size: 1.8rem;" href="/about-us/">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black fw-bold" style="font-size: 1.8rem;" href="/portfolio/">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black fw-bold" style="font-size: 1.8rem;" href="/shop/">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-black fw-bold" style="font-size: 1.8rem;" href="/contact-us/">Contact Us</a>
+                                </li>
+                                
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

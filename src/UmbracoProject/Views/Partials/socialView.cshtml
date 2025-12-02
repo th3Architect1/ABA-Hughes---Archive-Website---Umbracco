@@ -1,0 +1,62 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+@{
+   var facebook = Model.Value<string>("Facebook");
+   var instagram = Model.Value<string>("Instagram");
+   var linkedin = Model.Value<string>("Linkedin");
+   var pinterest = Model.Value<string>("Pinterest");
+}
+<!-- Social -->
+<section id="social" class="container py-18">
+   <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-8 px-5 px-sm-0">
+         <h2 class="mt-5 mb-5 fs-2 text text-center text-md-start">Subscribe to Our Newsletter</h2>
+         
+         <hr class="my-2">
+         <div class="d-grid gap-2 d-md-flex justify-content-center justify-content-md-start">
+            <a href="/newsletter-sign-up/">
+                <button type="button" class="btn btn-abahughes px-8 mt-2">Subscribe</button>
+            </a>
+         </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 border-start mt-8 mt-sm-0">
+         <h3 class="text-center">Connect with Us</h3>
+         <div class="container">
+            <div class="row justify-content-evenly">
+               <div class="col-4 pt-5">
+                        <a href="https://www.facebook.com/AbaHughes/" target="_blank">
+                           
+                           <img src="@Html.Raw(facebook)" loading="lazy" width="25px" height="25px" class="mx-auto d-block">
+                           <div class="text-center fw-light fs-6 pt-2">Facebook</div>
+                        </a>
+ 
+               </div>
+               <div class="col-4 pt-5">
+                        <a href="https://www.linkedin.com/in/brent-hughes-th3architect" target="_blank">
+                            <img src="@Html.Raw(linkedin)" loading="lazy" width="25px" height="25px" class="mx-auto d-block">
+                            <div class="text-center fw-light fs-6 pt-2">LinkedIn</div>
+                        </a>
+ 
+               </div>
+            </div>
+            <div class="row justify-content-evenly">
+               <div class="col-4 pt-5">
+                        <a href="https://www.pinterest.ca/th3architect/_saved/" target="_blank">
+                            <img src="@Html.Raw(pinterest)" loading="lazy" width="25px" height="25px" class="mx-auto d-block">
+                            <div class="text-center fw-light fs-6 pt-2">Pinterest</div>
+                        </a>
+ 
+               </div>
+               <div class="col-4 pt-5">
+                        <a href="https://www.instagram.com/th3arch1t3ct/" target="_blank">
+                            <img src="@Html.Raw(instagram)" loading="lazy" width="25px" height="25px" class="mx-auto d-block">
+                            <div class="text-center fw-light fs-6 pt-2">Instagram</div>
+                        </a>
+ 
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>

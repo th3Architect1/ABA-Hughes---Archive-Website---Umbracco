@@ -1,0 +1,60 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+@{
+   var homeImage = Model.Value<IPublishedContent>("homeImage");
+   var slides = Model.Value<BlockListModel>("jumbotronSlides");
+   var randomSlide = slides?.OrderBy(x => Guid.NewGuid()).FirstOrDefault()?.Content;
+
+   var selectedImage = randomSlide?.Value<IPublishedContent>("backgroundImage")?.Url() 
+                        ?? Model.Value<IPublishedContent>("homeImage")?.Url() 
+                        ?? "";
+
+   var selectedTitle = randomSlide?.Value<string>("heroTitle") 
+                        ?? "Comprehensive Design"; 
+
+   var selectedContent = randomSlide?.Value<string>("heroContent") 
+                          ?? "Our approach to design employs planning in 3D, with a focus on construction methods, interior design, facility management, sustainability and critical regionalism as a start.";
+}
+<!-- hero section -->
+<section id="Jumbotron" class="container-fluid">
+   <div class="row">
+      <div class="col-sm-12 col-md-4 align-self-center ps-10 d-none d-sm-none d-md-block">
+                <div class="py-2"><span class="pe-2 fs-6 text-black-50">001</span> <span class="fw-bold"><a href="/#jumbotron" class="text-dark fs-3">Home</a></span></div>
+                <div class="py-2"><span class="pe-2 fs-6 text-black-50">002</span> <span class="fw-bold"><a href="/#services" class="text-dark fs-3">Services</a></span></div>
+                <div class="py-2"><span class="pe-2 fs-6 text-black-50">003</span> <span class="fw-bold"><a href="#store" class="text-dark fs-3">Store</a></span></div>
+                <div class="py-2"><span class="pe-2 fs-6 text-black-50">004</span> <span class="fw-bold"><a href="/#portfolio" class="text-dark fs-3">Portfolio</a></span></div>
+                <div class="py-2"><span class="pe-2 fs-6 text-black-50">005</span> <span class="fw-bold"><a href="#testimonials" class="text-dark fs-3">Testimonials</a></span></div>
+                <div class="py-2"><span class="pe-2 fs-6 text-black-50">006</span> <span class="fw-bold"><a href="#contact" class="text-dark fs-3">Contact Us</a></span></div>
+                <div class="py-2"><span class="pe-2 fs-6 text-black-50">007</span> <span class="fw-bold"><a href="/shop/" class="text-dark fs-3">Shop</a></span></div>
+
+          
+      </div>
+      <div class="col-sm-12 col-md-8 p-0">
+            <div class="d-none d-sm-block" style="background: url('@selectedImage'); background-size: cover; background-repeat: no-repeat; background-position: center; height:100vh;">
+                <div class="container px-md-0 px-3">
+                   <div>
+                      <div class="col-lg-9 col-md-12 col-12 px-0 pt-6 pt-sm-13 pt-md-18">
+                         <div class="mt-21 mt-md-20 mt-lg-22 mt-xl-24 mb-3 mb-md-0 text-left text-light bg-white text-dark bg-opacity-5  ps-lg-0 py-lg-3 p-3 py-sm-5">
+                            <h1 class="display-5 text-left pt-sm-4 lh-1">@selectedTitle</h1>
+                            <p class="pt-3 pb-4 mb-0 fs-5 text text-left">@selectedContent</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div> 
+            <div class="d-block d-sm-none" style="background: url('@selectedImage'); background-size: cover; background-repeat: no-repeat; background-position: center; height:100vh;">
+                <div class="container px-md-0 px-3">
+                   <div>
+                      <div class="col-lg-9 col-md-12 col-12 px-0 pt-6 pt-sm-13 pt-md-18">
+                         <div class="mt-21 mt-md-20 mt-lg-24 mb-3 mb-md-0 text-left text-light bg-white text-dark bg-opacity-5 p-3 py-sm-5">
+                            <h1 class="display-5 text-left pt-sm-3 lh-1">@selectedTitle</h1>
+                            <p class="pt-3 mb-0 fs-5 text text-left">@selectedContent</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div> 
+      </div>
+   </div>
+</section>

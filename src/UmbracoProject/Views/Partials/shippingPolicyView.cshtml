@@ -1,0 +1,54 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+@{
+   var background = Model.Value<IPublishedContent>("background");
+}
+<div style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ),  url(@background.Url()?anchor=center&amp;mode=crop&amp;width=1600&amp;height=400&amp;format=jpg&amp;rnd=132901055183270000); background-size: cover; background-repeat: no-repeat; background-position: center;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="pt-18 pb-13 pt-lg-20 pb-lg-19 text-center text-light">
+                        <h1 class="display-3 text-white mb-3 lh-1">Shipping Policy</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="py-10 pt-lg-16 pb-lg-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-2 mt-2 mb-4">
+                        <div class="float-start me-2" style="background-color: #11B5DA; width:20px; height:20px;">
+                        </div>
+                        <div clas="fs-6">Shipping Policy</div>
+                    </div>
+                    <div class="col-sm-12 col-md-8 mb-10">
+                            
+    <div class="umb-grid">
+                <div class="grid-section">
+    <div>
+            <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div>
+                            
+    
+<p>Our aim is to get&nbsp;your order to you as quickly as possible!</p>
+<p>It will take 2-5 days to fulfill your order, at which point it will be shipped to you. Shipping times vary depending on the manufacturer, your location, and the effect of the COVID-19 pandemic on our supply chain. You will receive notifications from us at the transition points to update you on status (fulfillment, shipping, delivery, etc.).</p>
+<p>As we want to get your products to you as soon as possible, you may receive multiple packages shipped to you as your products are ready.&nbsp;</p>
+<p><strong>There are no shipping times for gift cards</strong>, as these are provided virtually immediately after purchase. You may&nbsp;want to&nbsp;consider a gift card if your order is time-sensitive&nbsp;to celebrate someone's&nbsp;special day or holiday.</p>
+<p>You are responsible for shipping returns, as noted in our Refund Policy.&nbsp;</p>
+<p>Questions about the Shipping Policy or status of your order should be sent to us through the 'Contact Us' page.</p>
+
+
+                </div>
+            </div>        </div>
+            </div>
+    </div>
+                </div>
+    </div>
+
+
+
+                    </div>
+                </div>
+            </div>    
+        </div>

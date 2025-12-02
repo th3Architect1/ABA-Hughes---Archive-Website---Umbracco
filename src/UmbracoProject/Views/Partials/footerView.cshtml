@@ -1,0 +1,61 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+@{
+   var logo = Model.Value<IPublishedContent>("logo");
+}
+<!-- footer -->
+<div class="footer pt-12 bg-abahughes text-body">
+   <div class="container-fluid">
+      <div class="col-lg-2 col-md-4 col-12">
+         <div class="mb-4">
+		       <img src="@logo.Url()" alt="Project Bindr Logo" loading="lazy" class="img-responsive mx-auto d-block" width="90" height="90"/>
+       
+         </div>
+      </div>
+      <div class="row justify-content-center mt-md-n12">
+
+                <div class="col-md-1">
+                    <div class="mb-4">
+                    <p class="mb-4 text-center text-md-start"><a href="/terms-of-service/" class="text-white">Terms of Service</a></p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="mb-4">
+                    <p class="mb-4 text-center text-md-start"><a href="/privacy-policy/" class="text-white">Privacy Policy</a></p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="mb-4">
+                    <p class="mb-4 text-center text-md-start"><a href="/refund-policy/" class="text-white">Refund Policy</a></p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="mb-4">
+                    <p class="mb-4 text-center text-md-start"><a href="/shipping-policy/" class="text-white">Shipping Policy</a></p>
+                    </div>
+                </div>
+
+
+      </div>
+      <div class="row justify-content-center">
+         <div class="col-md-2">
+            <div class="mb-4">
+               <p class="mb-4 text-white text-center">Greater Toronto Area</p>
+            </div>
+         </div>
+         <div class="col-md-2">
+            <div class="mb-4">
+               <p class="mb-4 text-white text-center">+1 416 779 2768</p>
+            </div>
+         </div>
+         <div class="col-md-2">
+            <div class="mb-4">
+               <p class="mb-4 text-white text-center"><a href="mailto:info@abahughes.com" class="text-white">info@abahughes.com</a></p>
+            </div>
+         </div>
+      </div>
+      <div class="row justify-content-center mt-12">
+           <p class="mb-0 text-white text-center">&copy; @DateTime.Now.Year Copyright by Project Bindr</p>
+      </div>
+   </div>
+</div>

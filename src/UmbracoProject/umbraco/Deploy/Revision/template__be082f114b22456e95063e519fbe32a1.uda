@@ -1,0 +1,21 @@
+{
+  "Name": "Aunty Ann\u0027s Bathroom",
+  "Alias": "AuntyAnnsBathroom",
+  "File": "umb://template-file/AuntyAnnsBathroom.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/be082f114b22456e95063e519fbe32a1",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/AuntyAnnsBathroom.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

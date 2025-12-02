@@ -1,0 +1,23 @@
+{
+  "Name": "AboutUs - SEO - Block Grid Property Editor UI",
+  "EditorAlias": "Umbraco.BlockGrid",
+  "EditorUiAlias": "Umb.PropertyEditorUi.BlockGrid",
+  "Configuration": {
+    "gridColumns": 12,
+    "blocks": [
+      {
+        "contentElementTypeKey": "b358bd0d-088d-4386-a532-a7d6f3bb7149",
+        "allowAtRoot": true,
+        "allowInAreas": true
+      }
+    ]
+  },
+  "Udi": "umb://data-type/2390c9eb42904e62b7f43def3b104236",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/b358bd0d088d4386a532a7d6f3bb7149"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "16.0.4"
+}

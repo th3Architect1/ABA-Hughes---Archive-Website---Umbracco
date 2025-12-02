@@ -1,0 +1,21 @@
+{
+  "Name": "Culinary Center",
+  "Alias": "CulinaryCenter",
+  "File": "umb://template-file/CulinaryCenter.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/94670b1b08054d0ca3d6a41bcdd6f995",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/CulinaryCenter.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

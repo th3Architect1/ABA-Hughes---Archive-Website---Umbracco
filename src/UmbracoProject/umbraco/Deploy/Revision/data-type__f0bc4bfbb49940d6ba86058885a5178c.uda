@@ -1,0 +1,12 @@
+{
+  "Name": "Label (",
+  "EditorAlias": "Umbraco.TextArea",
+  "EditorUiAlias": "Umb.PropertyEditorUi.TextArea",
+  "Configuration": {
+    "rows": 10
+  },
+  "Udi": "umb://data-type/f0bc4bfbb49940d6ba86058885a5178c",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "16.0.4"
+}

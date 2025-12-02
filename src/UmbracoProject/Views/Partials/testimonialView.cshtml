@@ -1,0 +1,30 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+@{
+   var feedbacks = Model.Value<BlockListModel>("customerFeedbacks");
+   var randomFeedback = feedbacks?.OrderBy(x => Guid.NewGuid()).FirstOrDefault()?.Content;
+
+   var selectedCustomer = randomFeedback?.Value<string>("customer") 
+                        ?? "Amin Bhula"; 
+
+   var selectedContent = randomFeedback?.Value<string>("feedback") 
+                          ?? "First of all Project Bindr great company. The professional I hired was very punctual, accurate, and to the point. To be honest, very happy with the work they did for me. If you hire Project Bindr, consider you are on safe hand, just relax, your work would be done. Once again, great company.";
+}
+<!-- Testimonial section -->
+<div id="testimonials" class="pt-lg-6">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <div class="col-sm-12 col-md-10 offset-md-2 pb-12 pt-12 pt-lg-6 pb-lg-18 px-4">
+               <div>
+                        <p class="lead fst-italic fw-light">@selectedContent</p>
+                        <h5 class="bold">@selectedCustomer</h5>
+
+               </div>
+               <div class="text-light fw-bold float-end mt-n19" style="font-size:250px;">"</div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

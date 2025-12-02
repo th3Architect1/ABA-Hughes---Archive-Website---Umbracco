@@ -1,0 +1,55 @@
+{
+  "Name": "Product ",
+  "Alias": "product",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-defrag color-red",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "IsElementType": true,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/2204cb2b52fe4c9699bee17f3dd1720c",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "89b064ce-33be-46c1-8f17-59e1cda6f623",
+      "Name": "Assets",
+      "Type": 1,
+      "Alias": "assets",
+      "PropertyTypes": [
+        {
+          "Key": "ac343e43-ad19-4ccb-b7a2-6a84cf2dfc10",
+          "Alias": "productName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Product Name",
+          "SortOrder": 1
+        },
+        {
+          "Key": "c19b1fc7-cb3b-4b6b-906e-5bc530669393",
+          "Alias": "productImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Product Image"
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/b767a7d3d082497bbe601bbc6cc2b5e7",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/2204cb2b52fe4c9699bee17f3dd1720c",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "16.0.4"
+}

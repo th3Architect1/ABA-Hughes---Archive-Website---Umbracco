@@ -1,0 +1,285 @@
+{
+  "Name": "HomePage",
+  "Alias": "homePage",
+  "DefaultTemplate": "umb://template/78d63a090b6a4ca58f5507b77cdca6a9",
+  "AllowedTemplates": [
+    "umb://template/78d63a090b6a4ca58f5507b77cdca6a9"
+  ],
+  "HistoryCleanup": {},
+  "Icon": "icon-home color-blue",
+  "Thumbnail": "folder.png",
+  "Description": "This is the main home/welcome page for the website.",
+  "Permissions": {
+    "AllowedAtRoot": true,
+    "AllowedChildContentTypes": [
+      "umb://document-type/4309ee8a06624a2e805b4e2742826758",
+      "umb://document-type/54ccf696ce7a416a819b2069a3fd0a41",
+      "umb://document-type/305a2df317d14b719c11405473ba0c91",
+      "umb://document-type/d57ab4e709014407bf6687f06da10e49",
+      "umb://document-type/b4ba13ea6ade4e14b34b93187f092324",
+      "umb://document-type/543c59a708fe4425b3c4b0ceef33055e",
+      "umb://document-type/91f5cff56c6d4e348c726b7cd71522b6",
+      "umb://document-type/982226892183494fb419acd598732cb9",
+      "umb://document-type/e520864f3f1e4e979c57c37506efc615",
+      "umb://document-type/7322ac9651d34118aecb66ab477e030d"
+    ]
+  },
+  "Parent": "umb://document-type-container/c019110181434090abf38777b832465f",
+  "CompositionContentTypes": [
+    "umb://document-type/b358bd0d088d4386a532a7d6f3bb7149"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "7f512a32-7c8d-4666-ad40-576739aec555",
+      "Name": "Assets",
+      "Type": 1,
+      "Alias": "assets",
+      "PropertyTypes": [
+        {
+          "Key": "0f104f1b-3344-466f-a666-7b407787cdd5",
+          "Alias": "customerFeedbacks",
+          "DataType": "umb://data-type/022fe08d739245888c33d226ac7472eb",
+          "Name": "Customer Feedbacks",
+          "SortOrder": 1
+        },
+        {
+          "Key": "6851aed7-28b4-4aba-9d51-5fa5dca7a316",
+          "Alias": "jumbotronSlides",
+          "DataType": "umb://data-type/7dbe142416ce4d24b6082675d2db7d2a",
+          "Name": "Jumbotron Slides"
+        }
+      ]
+    },
+    {
+      "Key": "98f6ab71-7fda-4fe2-9542-6dd653a445df",
+      "Name": "Content",
+      "SortOrder": 1,
+      "Type": 1,
+      "Alias": "content",
+      "PropertyTypes": [
+        {
+          "Key": "b80b490c-d871-481c-9c26-276a1dad4214",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Title"
+        }
+      ]
+    },
+    {
+      "Key": "b80f9ef3-0425-4019-83fb-6b85a7797204",
+      "Name": "Images",
+      "Alias": "assets/images",
+      "PropertyTypes": [
+        {
+          "Key": "017f00ce-f619-406a-b2a8-2401e0c3386e",
+          "Alias": "standardGImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "StandardGImage",
+          "SortOrder": 5
+        },
+        {
+          "Key": "16eec4c4-f4a8-4d38-800e-94e3a1234559",
+          "Alias": "englishImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "EnglishImage",
+          "SortOrder": 10
+        },
+        {
+          "Key": "1967a574-7894-4ea7-afe4-bcdf260255fb",
+          "Alias": "butterflyImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "ButterflyImage",
+          "SortOrder": 9
+        },
+        {
+          "Key": "23fcdc5c-0aa2-404b-8b5b-dd3ef96d5256",
+          "Alias": "nav",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "nav",
+          "SortOrder": 13
+        },
+        {
+          "Key": "26dfb61e-f467-4657-b0f3-48085bfbe54f",
+          "Alias": "bishopImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "BishopImage",
+          "SortOrder": 2
+        },
+        {
+          "Key": "27442578-47e0-4611-8ea7-619e41078bd1",
+          "Alias": "woodmountImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "WoodmountImage",
+          "SortOrder": 7
+        },
+        {
+          "Key": "2ba1bfd3-d0cc-4fca-9744-c877fb0aad9f",
+          "Alias": "storeImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "storeImage",
+          "SortOrder": 12
+        },
+        {
+          "Key": "76160279-d7f9-49cb-a7e6-01beb9354a64",
+          "Alias": "hybridImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "HybridImage",
+          "SortOrder": 8
+        },
+        {
+          "Key": "88088959-af5c-4dd2-b85e-8281af91532b",
+          "Alias": "logo",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Logo",
+          "SortOrder": 11
+        },
+        {
+          "Key": "92f53db2-079d-4791-ba74-529a81909b8a",
+          "Alias": "potpourriImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "PotpourriImage",
+          "SortOrder": 4
+        },
+        {
+          "Key": "98103245-4f24-4547-9982-4c440860bf34",
+          "Alias": "homeImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "HomeImage",
+          "SortOrder": 1
+        },
+        {
+          "Key": "a645ccf8-1c74-4b04-b6c3-5ee225d13d70",
+          "Alias": "auntyImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "AuntyImage",
+          "SortOrder": 3
+        },
+        {
+          "Key": "c5116c11-e15b-427d-bbb7-1d1137c12ed6",
+          "Alias": "standardAImage",
+          "DataType": "umb://data-type/4309a3ea0d784329a06cc80b036af19a",
+          "Name": "StandardAImage",
+          "SortOrder": 6
+        }
+      ]
+    },
+    {
+      "Key": "e2a5ef58-2adf-42dd-9514-ae52826181c8",
+      "Name": "Svgs",
+      "SortOrder": 1,
+      "Alias": "assets/svgs",
+      "PropertyTypes": [
+        {
+          "Key": "2d0f152e-21d3-4184-9817-edefbe9444de",
+          "Alias": "instagram",
+          "DataType": "umb://data-type/215cb418215344299aef8c0f0041191b",
+          "Name": "Instagram",
+          "SortOrder": 1
+        },
+        {
+          "Key": "99196272-f4f8-4888-ab26-6e6a1490b4b6",
+          "Alias": "pinterest",
+          "DataType": "umb://data-type/215cb418215344299aef8c0f0041191b",
+          "Name": "Pinterest",
+          "SortOrder": 2
+        },
+        {
+          "Key": "b44a61a0-0c8d-4b4e-b6ce-e8a0d5002cf3",
+          "Alias": "facebook",
+          "DataType": "umb://data-type/215cb418215344299aef8c0f0041191b",
+          "Name": "Facebook"
+        },
+        {
+          "Key": "da650b41-d103-4f69-bffe-87b57accb6d4",
+          "Alias": "linkedin",
+          "DataType": "umb://data-type/215cb418215344299aef8c0f0041191b",
+          "Name": "Linkedin",
+          "SortOrder": 3
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/1864a86d203b45afad2cc022ec1b4ffc",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/022fe08d739245888c33d226ac7472eb",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/215cb418215344299aef8c0f0041191b",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/4309a3ea0d784329a06cc80b036af19a",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/7dbe142416ce4d24b6082675d2db7d2a",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/c019110181434090abf38777b832465f",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/305a2df317d14b719c11405473ba0c91",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/4309ee8a06624a2e805b4e2742826758",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/543c59a708fe4425b3c4b0ceef33055e",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/54ccf696ce7a416a819b2069a3fd0a41",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/7322ac9651d34118aecb66ab477e030d",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/91f5cff56c6d4e348c726b7cd71522b6",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/982226892183494fb419acd598732cb9",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/b358bd0d088d4386a532a7d6f3bb7149",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/b4ba13ea6ade4e14b34b93187f092324",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/d57ab4e709014407bf6687f06da10e49",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/e520864f3f1e4e979c57c37506efc615",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/78d63a090b6a4ca58f5507b77cdca6a9",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "16.0.4"
+}

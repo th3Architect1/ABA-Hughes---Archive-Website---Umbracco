@@ -1,0 +1,40 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@using Umbraco.Cms.Core.Models.Blocks
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<IPublishedContent>
+@{
+   var products = Model.Value<BlockListModel>("products");
+}
+<!-- Portfolio section -->
+<div id="portfolio" class="pt-lg-5 pb-lg-12">
+   <div class="container">
+      <div class="row">
+
+    	@for (int i = 0; i < products.Count; i++)
+    {
+        var product = products[i].Content;
+        var productImage = product.Value<IPublishedContent>("productImage");
+        var productName = product.Value<string>("productName");
+        
+        <div class="col-sm-12 col-md-4">
+            <a href="/shop/@productName.ToLower().Replace(" ", "-")/">
+                <picture>
+                    @if (productImage != null)
+                    {
+                        <img src="@productImage.GetCropUrl(width: 424, height: 424)"
+                             alt="@productName"
+                             loading="lazy"
+                             class="img-fluid"
+                             width="424"
+                             height="424">
+                    }
+                </picture>
+            </a>
+            <p class="mt-4 ps-3 p-3 text-black bg-white">
+                <a href="/shop/@productName.ToLower().Replace(" ", "-")/" class="text-black">@productName</a>
+            </p>
+        </div>
+    }
+    
+      </div>
+   </div>
+</div>

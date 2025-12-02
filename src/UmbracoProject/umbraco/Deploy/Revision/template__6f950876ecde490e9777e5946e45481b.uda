@@ -1,0 +1,21 @@
+{
+  "Name": "Vanity",
+  "Alias": "Vanity",
+  "File": "umb://template-file/Vanity.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/6f950876ecde490e9777e5946e45481b",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Vanity.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

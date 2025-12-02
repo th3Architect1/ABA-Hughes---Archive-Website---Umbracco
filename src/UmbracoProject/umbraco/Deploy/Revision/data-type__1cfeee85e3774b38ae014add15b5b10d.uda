@@ -1,0 +1,20 @@
+{
+  "Name": "Lighting Fixtures - ProductImages - Block List Property Editor UI",
+  "EditorAlias": "Umbraco.BlockList",
+  "EditorUiAlias": "Umb.PropertyEditorUi.BlockList",
+  "Configuration": {
+    "blocks": [
+      {
+        "contentElementTypeKey": "b767a7d3-d082-497b-be60-1bbc6cc2b5e7"
+      }
+    ]
+  },
+  "Udi": "umb://data-type/1cfeee85e3774b38ae014add15b5b10d",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/b767a7d3d082497bbe601bbc6cc2b5e7"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "16.0.4"
+}

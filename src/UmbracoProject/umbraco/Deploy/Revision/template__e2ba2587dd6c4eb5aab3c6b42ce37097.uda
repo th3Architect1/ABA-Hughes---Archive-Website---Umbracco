@@ -1,0 +1,21 @@
+{
+  "Name": "Terms of Service",
+  "Alias": "TermsOfService",
+  "File": "umb://template-file/TermsOfService.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/e2ba2587dd6c4eb5aab3c6b42ce37097",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/TermsOfService.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

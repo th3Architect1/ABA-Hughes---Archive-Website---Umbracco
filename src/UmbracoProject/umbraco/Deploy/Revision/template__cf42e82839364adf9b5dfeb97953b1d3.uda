@@ -1,0 +1,21 @@
+{
+  "Name": "Bommel Bottle",
+  "Alias": "BommelBottle",
+  "File": "umb://template-file/BommelBottle.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/cf42e82839364adf9b5dfeb97953b1d3",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/BommelBottle.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

@@ -1,0 +1,62 @@
+{
+  "Name": "Jumbotron Slide",
+  "Alias": "jumbotronSlide",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-defrag color-red",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "IsElementType": true,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/2204cb2b52fe4c9699bee17f3dd1720c",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "c2079f60-107f-495b-89a9-356785089d53",
+      "Name": "Background",
+      "Type": 1,
+      "Alias": "background",
+      "PropertyTypes": [
+        {
+          "Key": "764ef673-28b1-46aa-89a6-482d52b629b8",
+          "Alias": "backgroundImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Background Image"
+        },
+        {
+          "Key": "79930388-2af7-46f6-b9ca-ae187bcec4c8",
+          "Alias": "heroContent",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Hero Content",
+          "SortOrder": 1
+        },
+        {
+          "Key": "869f4990-cdfe-4b9a-bb5b-08f48a5d255a",
+          "Alias": "heroTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Hero Title",
+          "SortOrder": 2
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/2022bae3c4f84ad0a9032991657ab60a",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/2204cb2b52fe4c9699bee17f3dd1720c",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "16.0.4"
+}

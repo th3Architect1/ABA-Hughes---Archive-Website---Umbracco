@@ -1,0 +1,18 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "main.cshtml";
+}
+<div class="py-10 pt-lg-16 pb-lg-12">
+    <div class="container">
+        <div class="row">
+            <div class="mb-5 mt-5">
+                <h1 class="">Portfolio</h1>
+                    <p class=""></p>
+            </div>
+                
+        </div>
+    </div>
+    @await Html.PartialAsync("portfolioView",Model)
+</div>
+

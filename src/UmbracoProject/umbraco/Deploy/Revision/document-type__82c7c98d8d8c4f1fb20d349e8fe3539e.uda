@@ -1,0 +1,90 @@
+{
+  "Name": "Ceiling Lighting",
+  "Alias": "ceilingLighting",
+  "DefaultTemplate": "umb://template/76c6766008f046d49405fcd7aa252f01",
+  "AllowedTemplates": [
+    "umb://template/76c6766008f046d49405fcd7aa252f01"
+  ],
+  "HistoryCleanup": {},
+  "Icon": "icon-gift color-blue",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/591fc79692aa4d1d90c6b7bb66f798f2",
+  "CompositionContentTypes": [
+    "umb://document-type/b358bd0d088d4386a532a7d6f3bb7149"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "a6e717a6-4738-4ab6-a725-c17a9752df12",
+      "Name": "Content",
+      "SortOrder": 1,
+      "Type": 1,
+      "Alias": "content",
+      "PropertyTypes": [
+        {
+          "Key": "0fe6ee3d-28f1-4e8e-bc9a-95a1bfb11ca7",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Title"
+        }
+      ]
+    },
+    {
+      "Key": "e47be8af-e0c5-42d4-abdb-c93dbf54c944",
+      "Name": "Assets",
+      "Type": 1,
+      "Alias": "assets",
+      "PropertyTypes": [
+        {
+          "Key": "5a1514f8-84d8-49d6-8f21-a18b7c69a9ec",
+          "Alias": "logo",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Logo",
+          "SortOrder": 1
+        },
+        {
+          "Key": "901430b4-1061-48e4-8d89-cf233ec04aa0",
+          "Alias": "mainImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Main Image",
+          "SortOrder": 2
+        },
+        {
+          "Key": "af9de20e-ed84-4013-b67b-7ff4159a6daf",
+          "Alias": "nav",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Nav"
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/82c7c98d8d8c4f1fb20d349e8fe3539e",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/591fc79692aa4d1d90c6b7bb66f798f2",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/b358bd0d088d4386a532a7d6f3bb7149",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://template/76c6766008f046d49405fcd7aa252f01",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "16.0.4"
+}

@@ -1,0 +1,21 @@
+{
+  "Name": "Lighting Zephyr",
+  "Alias": "LightingZephyr",
+  "File": "umb://template-file/LightingZephyr.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/1326c702065f4bc6b6387c0a8c43efce",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/LightingZephyr.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

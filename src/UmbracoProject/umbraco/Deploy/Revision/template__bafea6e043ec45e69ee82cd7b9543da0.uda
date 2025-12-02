@@ -1,0 +1,21 @@
+{
+  "Name": "Standard G",
+  "Alias": "StandardG",
+  "File": "umb://template-file/StandardG.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/bafea6e043ec45e69ee82cd7b9543da0",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/StandardG.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

@@ -1,0 +1,21 @@
+{
+  "Name": "Hybrid",
+  "Alias": "Hybrid",
+  "File": "umb://template-file/Hybrid.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/f0f26b9a51cd4df193cae0a952bdaad2",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/Hybrid.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}

@@ -1,0 +1,21 @@
+{
+  "Name": "Bommel Bowl",
+  "Alias": "BommelBowl",
+  "File": "umb://template-file/BommelBowl.cshtml",
+  "Master": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+  "Udi": "umb://template/1e694b32a8b54029876675a9623ff7d8",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/BommelBowl.cshtml",
+      "Ordering": true,
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://template/dbed4a05cff3467a96090aacf5fe2882",
+      "Ordering": true,
+      "Mode": "Exist"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "16.0.4"
+}
